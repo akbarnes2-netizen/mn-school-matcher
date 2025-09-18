@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>School Matching Survey and Information</title>
+    </head>
+    <body style="background-color:LemonChiffon;">
+        <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;">School Filter by Chosen Quality!</h1>
+        <style>
+            .styled {
+                font-size: 1.1rem;        
+                padding: 10px 14px;   
+                border-radius: 8px;   
+                border: 2px solid #339999;
+                background-color: #fefefe;
+                color: #004d4d;     
+                width: 320px; 
+        }
+        </style>
+        <form action="/submit" method="post">
+            <label for="quality" style="text-align: center; color:Teal; font-family: Georgia, serif;">Which school quality would you like to sort by?</label><br>
+            <select name="quality" id="quality" class="styled" required>
+                <option value="" disabled selected>Select a quality</option>
+                <option value="reading">Reading Scores-High to Low</option>
+                <option value="math">Math Scores-High to Low</option>
+                <option value="science">Science Scores-High to Low</option>
+                <option value="attendance">Attendance Rate-High to Low</option>
+                <option value="opinion">Student Opinion-High to Low</option>
+                <option value="suspension">Suspension Rate-Low to High</option>
+                <option value="diversity">Non-White Percentage-High to Low</option>
+                <option value="language">English Language Learner Percentage-High to Low</option>
+                <option value="economic">Free-Reduced Lunch Percentage-High to Low</option>
+                <option value="preschool">Preschool Attendance Rate-High to Low</option>
+                <option value="ratio">Student-Teacher Ratio-Low to High</option>
+                <option value="para">Paraprofessional Percentage-High to Low</option>
+                <option value="licensed">Licensed Teacher Percentage-High to Low</option>
+                <option value="advanced">Advanced Teacher Percentage-High to Low</option>
+                <option value="federal">Spending From Federal Government-High to Low</option>
+                <option value="trend">Trends Overtime-Up, Neutral, then Down</option>
+            </select>
+            <br><br>
+            
+            <label for="geography" style="text-align: center; color:Teal; font-family: Georgia, serif;">If you would like to filter schools so that only schools in your district and neighboring districts are included, please select your district from the dropdown menu. If location is not important to you, please select None.</label>
+        <select id="geography" name="geography" class="styled">
+            <option value="">None</option>
+            <option value="Ada-Borup-West">Ada-Borup-West</option>
+            <option value="Southland">Southland</option>
+            <option value="Adrian">Adrian</option>
+            <option value="Aitkin">Aitkin</option>
+            <option value="Albany">Albany</option>
+            <option value="Albert Lea">Albert Lea</option>
+            <option value="St. Michael-Albertville">St. Michael-Albertville</option>
+            <option value="Alden-Conger">Alden-Conger</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="Lewiston-Altura">Lewiston-Altura</option>
+        </select>
+        <button class="styled" type="submit">Submit</button>
+        </form>
+    </body>
+</html> 

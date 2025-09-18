@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Filter Results</title>
+</head>
+<body style="background-color:LemonChiffon;">
+    <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;">Top Matching Schools Based on Your Filtered Quality</h1>
+     <style>
+        .data {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .data th, .data td {
+          border: 2px solid teal; /* thickness + color here */
+          padding: 8px;
+          text-align: center;
+    }
+    .data th {
+          background-color: #e0f7f7;
+    }
+    </style>
+    {{ table | safe }}
+    <br>
+    <a href="{{ url_for('home') }}">Back to Homepage</a>
+</body>
+</html>
