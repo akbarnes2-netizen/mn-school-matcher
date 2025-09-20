@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sources - Where did my information come from?</title>
+    </head>
+    <body style="background-color:LemonChiffon;">
+        <h2 style="text-align: center; color:Teal; font-family: Georgia, serif;">The information used for this project was manually entered by me from the Minnesota Report Card (MRC). The Minnesota Report Card is owned and updated by the Minnesota Department of Education, with access to public state data. Both elementary, middle, and high schools are on the MRC website, though this project has only made use of the elementary school section. The data is extremely useful for students, parents, and educators alike. To access the MRC website yourself, use the following link:</h2>
+        <div style="text-align: center; color:Teal; font-family: Georgia, serif; font-size: 20px;">
+            <a href="https://rc.education.mn.gov/#mySchool/p--3">MRC Website</a>
+        </div>
+        <h2 style="text-align: center; color:Teal; font-family: Georgia, serif;">Additionally, the explanations I have included regarding the significance and meaning of the MRC data were sourced from the Minnesota Report Card Companion Sheet, which may be informative for those looking to complete more detailed research into the data. Click the following link to download the pdf:</h2>
+        <div style="text-align: center; color:Teal; font-family: Georgia, serif; font-size: 20px;">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://education.mn.gov/mdeprod/idcplg%3FIdcService%3DGET_FILE%26dDocName%3Dprod084816%26RevisionSelectionMethod%3DlatestReleased%26Rendition%3Dprimary&ved=2ahUKEwiXrO7Yhd6OAxU5tokEHcHsHUEQFnoECBUQAQ&usg=AOvVaw0DyE6jecwzeIcw4UJjq2eq">Companion Sheet PDF</a>
+        </div>
+    </body>
+</html> 

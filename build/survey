@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Matching Survey and Information</title>
+    </head>
+    <style>
+            .styled {
+                font-size: 1.1rem;        
+                padding: 10px 14px;   
+                border-radius: 8px;   
+                border: 2px solid #339999;
+                background-color: #fefefe;
+                color: #004d4d;     
+                width: 320px; 
+        }
+    </style>
+    <body style="background-color:LemonChiffon;">
+        <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;">School Matching Survey and Information!</h1>
+        <h2 style="text-align: center; color:Teal; font-family: Georgia, serif;">This page contains a survey where you will be asked some questions about your student and will rank the importance of a variety of school qualities, all which will help you find the best match for your child. </h2>
+        
+        <form action="/results" method="POST">
+          <h2 style="text-align: center; color:Teal; font-family: Georgia, serif;">17 school qualities are listed below. Each quality contains a description of its measurements and significance.</h2>
+          <p style="text-align: center; color:Teal; font-family: Georgia, serif;">Please rank each quality from 1 to 17, based on how important it is for you personally. Here, 1 stands for the highest importance. If a quality is completely unimportant to you, enter a 0. This will make the total (lowest rank) less than 17. Once you have filled out the form and clicked submit, your matched schools will appear, from closest match onwards.</p>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Reading Performance represents the percentage of students that were expected to take the state tests who are proficient on the reading section. </h1>
+          <input class="styled" type="number" name="read" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Math Performance represents the percentage of students that were expected to take the state tests who are proficient on the math section.</h1>
+          <input class="styled" type="number" name="math" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Science Performance represents the percentage of students that were expected to take the state tests who are proficient on the science section. Not all schools or students are tested on the science category, so there may be some schools where this value is not provided.</h1>
+          <input class="styled" type="number" name="science" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Attendance Rate represents the percentage of students who attended school regularly.</h1>
+          <input class="styled" type="number" name="attend" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Student Opinion represents the percentage of students that agree with the statement "At my school, teachers care about students" on the 2022 Minnesota Student Survey. </h1>
+          <input class="styled" type="number" name="care" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Suspension Rate represents the percentage of students enrolled and who receive an in-school or out-of-school suspension.</h1>
+          <input class="styled" type="number" name="suspend" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Non-White Percentage represents the percentage of students enrolled who are reported as being part of a non-white racial/ethnic group.</h1>
+          <input class="styled" type="number" name="NW" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> ELL Percentage represents the percentage of students enrolled who are reported as being an English language learner.</h1>
+          <input class="styled" type="number" name="ELL" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Special Ed Percentage represents the percentage of students enrolled who are reported as requiring special education, or who have additional needs when it comes to their education.</h1>
+          <input class="styled" type="number" name="SE" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Free-Reduced Lunch Percentage represents the percentage of students enrolled who are reported as receiving freed or reduced-price lunch, according to their financial status.</h1>
+          <input class="styled" type="number" name="FRL" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Preschool Attendance represents the percentage of the students enrolled in kindergarten who attended Minnesota public preschools.</h1>
+          <input class="styled" type="number" name="preschool" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Student-Teacher Ratio represents the student to educator ratio at the school. For example, one educator per 15 children would be reported as a student-teacher ratio of 15.</h1>
+          <input class="styled" type="number" name="STratio" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Para Percentage represents the percentage of individuals employed that are paraprofessionals.</h1>
+          <input class="styled" type="number" name="para" min="0" max="17" required><br><br>
+            
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Licensed Percentage represents the percentage of individuals employed that are licensed in the subject area that they teach.</h1>
+          <input class="styled" type="number" name="license" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Advanced Degree Percentage represents the percentage of individuals employed that have advanced degrees. </h1>
+          <input class="styled" type="number" name="advanced" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Federal Funding represents the percentage of money spent by the school that comes from federal funding.</h1>
+          <input class="styled" type="number" name="fed" min="0" max="17" required><br><br>
+
+          <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;"> Overall Trend represents the overall performance trend of students on the math, reading, and science section of state tests. I determined this myself by looking at a performance graph throughout the last few years, so for this reason this value is relatively subjective. </h1>
+          <input class="styled" type="number" name="trend" min="0" max="17" required><br><br>
+
+            
+          <label for="geography" style="text-align: center; color:Teal; font-family: Georgia, serif;">You are also able to set a geography boundary as part of your search. If you would like to filter schools so that only schools in your district and neighboring districts are included, please select your district from the dropdown menu. If location is not important to you, please select None.</label>
+        <select class="styled" id="geography" name="geography">
+            <option value="">None</option>
+            <option value="Ada-Borup-West">Ada-Borup-West</option>
+            <option value="Southland">Southland</option>
+            <option value="Adrian">Adrian</option>
+            <option value="Aitkin">Aitkin</option>
+            <option value="Albany">Albany</option>
+            <option value="Albert Lea">Albert Lea</option>
+            <option value="St. Michael-Albertville">St. Michael-Albertville</option>
+            <option value="Alden-Conger">Alden-Conger</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="Lewiston-Altura">Lewiston-Altura</option>
+        </select>
+          
+            
+          <input class="styled" type="submit" value="Submit Rankings">
+        </form>
+    </body>
+</html> 

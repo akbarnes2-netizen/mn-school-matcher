@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Data Table</title>
+</head>
+<body style="background-color:LemonChiffon;">
+    <style>
+            .styled {
+                font-size: 1.1rem;        
+                padding: 10px 14px;   
+                border-radius: 8px;   
+                border: 2px solid #339999;
+                background-color: #fefefe;
+                color: #004d4d;     
+                width: 320px; 
+        }
+    </style>
+    <form method="POST" action="/total">
+        <label for="geography" style="text-align: center; color:Teal; font-family: Georgia, serif;">If you would like to filter schools so that only schools in your district and neighboring districts are included, please select your district from the dropdown menu. If location is not important to you, please select None.</label>
+        <select class="styled" id="geography" name="geography">
+            <option value="">None</option>
+            <option value="Ada-Borup-West">Ada-Borup-West</option>
+            <option value="Southland">Southland</option>
+            <option value="Adrian">Adrian</option>
+            <option value="Aitkin">Aitkin</option>
+            <option value="Albany">Albany</option>
+            <option value="Albert Lea">Albert Lea</option>
+            <option value="St. Michael-Albertville">St. Michael-Albertville</option>
+            <option value="Alden-Conger">Alden-Conger</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="Lewiston-Altura">Lewiston-Altura</option>
+        </select>
+        <button class="styled"type="submit">Submit</button>
+    </form>
+    <h1 style="text-align: center; color:Teal; font-family: Georgia, serif;">All Minnesota Elementary School Data</h1>
+    <style>
+        .data {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .data th, .data td {
+          border: 2px solid teal; /* thickness + color here */
+          padding: 8px;
+          text-align: center;
+    }
+    .data th {
+          background-color: #e0f7f7;
+    }
+    </style>
+    
+</body>
+</html>
