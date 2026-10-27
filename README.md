@@ -4,7 +4,7 @@ This project is intended for parents of elementary school-aged children who resi
 
 ![Example](images/example.png)
 
-Link to project: Coming Soon
+Link to project: https://mn-school-matcher.onrender.com/
 
 alt tag
 
